@@ -41,7 +41,8 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  console.log (x + y)
+  var sumar = x + y
+  return sumar
   
   
 }
@@ -50,8 +51,8 @@ suma(2, 3)
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  console.log(x - y)
-  
+  var restar = x - y
+  return restar
   
 }
 resta(2, 1)
@@ -59,7 +60,6 @@ resta(2, 1)
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  console.log(x * y)
   var multiplicacion = x * y;
   return multiplicacion
   
@@ -127,8 +127,13 @@ function esPar(num)  {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(num /2 ){return true}
+  else return false
   
-}
+    
+  }esPar(2)
+  
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
@@ -222,97 +227,64 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
- console.log(`Hola mi nombre es ${nombre} ${apellido}`);
- var minombre = "elias" + " fernandez";
+ return`Hola mi nombre es ${nombre} ${apellido}`;
+ 
 }
-combinarNombres(minombre);
+combinarNombres("elias", "fernandez");
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
   console.log("Hola,Como estas" + nombre)
-  return `hola ,${nombre}`
-}
+ return `hola,${nombre}`}
 obtenerSaludo(" elias")
-obtenerSaludo(" juan")
-obtenerSaludo(" sofia")
+
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var alto = alto 
-var ancho = ancho 
-return alto + ancho}
-obtenerAreaRectangulo("10 metros", "30 metros")
+return alto * ancho}
+obtenerAreaRectangulo(10, 20)
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  var a = 20 
   
-}
+  return a * 4
+  
+}retornarPerimetro (20)
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var base = 20
+  var altura= 10
+ var area = base * altura
+ return area
 }
-
+areaDelTriangulo()
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var divisas = euro * 1.20
+return divisas  
+}
+deEuroAdolar(1)
+
+function isVocal(char){
+  if(["a", "e", "i", "o", "u"].includes(char.toLowerCase())){
+    console.log("Vocal!")  
+  }else {
+    console.log("Not a vocal!")
+  }
 }
 
-
-function esVocal(letra){
-  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
-  //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
-  //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
-  // Si no es vocal, tambien debe devolver "Dato incorrecto".
-  //Escribe tu código aquí
-  
-}
-
-
-
-// No modificar nada debajo de esta línea
-// --------------------------------
-
-module.exports = {
-  nuevaString,
-  nuevoNum,
-  nuevoBool,
-  nuevaResta,
-  nuevaMultiplicacion,
-  nuevoModulo,
-  devolverString,
-  tienenMismaLongitud,
-  sonIguales,
-  menosQueNoventa,
-  mayorQueCincuenta,
-  suma,
-  resta,
-  divide,
-  multiplica,
-  obtenerResto,
-  esPar,
-  esImpar,
-  elevarAlCuadrado,
-  elevarAlCubo,
-  elevar,
-  redondearNumero,
-  redondearHaciaArriba,
-  numeroRandom,
-  esPositivo,
-  agregarSimboloExclamacion,
-  combinarNombres,
-  obtenerSaludo,
-  obtenerAreaRectangulo,
-  retornarPerimetro,
-  areaDelTriangulo,
-  deEuroAdolar,
-  esVocal,}
+isVocal("a"); 
+isVocal("j"); 
+isVocal("test"); 
+isVocal("o"); 

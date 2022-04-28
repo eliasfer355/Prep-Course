@@ -1,0 +1,28 @@
+.titulo{ max-width : 400px;
+    margin: auto;}
+    .descripcion{ font-size: 12px; max-width : 400px;
+    margin: auto;
+     color: red;}
+    .image{width: 300px;
+  margin: 20px auto;
+  position: relative;
+bottom: 280;
+right: -350;}
+.laboral{position: relative;
+bottom: 170;
+font-size: 12; max-width : 400px;
+    margin: auto}
+.skills{position: relative;
+bottom: 170;
+font-size: 12; max-width : 400px;
+    margin: auto}
+.hobbies{position: relative;
+bottom: 170 ;
+ font-size: 12;
+ max-width : 400px;
+    margin: auto}
+    .Henry{position: relative;
+bottom: 170 ;
+ font-size: 12;
+ max-width : 400px;
+margin: auto;}
